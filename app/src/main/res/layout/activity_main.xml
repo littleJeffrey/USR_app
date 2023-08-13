@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="197dp">
+
+        <Button
+            android:id="@+id/button_camera"
+            android:layout_width="405dp"
+            android:layout_height="74dp"
+            android:background="@drawable/cream" />
+
+        <ImageView
+            android:id="@+id/Image_view_camera"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"></ImageView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_degree"
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"
+                    android:text="溫度"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/editText_degree"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/text_view_degree_2"
+                    android:layout_width="132dp"
+                    android:layout_height="match_parent"
+                    android:text="度"
+                    android:textSize="30sp" />
+
+                <Switch
+                    android:id="@+id/switch_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="確認" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_view_humidity"
+                    android:layout_width="71dp"
+                    android:layout_height="match_parent"
+                    android:text="濕度"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/editText_humidity"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:id="@+id/text_view_humidity_2"
+                    android:layout_width="128dp"
+                    android:layout_height="match_parent"
+                    android:text="%"
+                    android:textSize="30sp" />
+
+                <Switch
+                    android:id="@+id/switch_humidity"
+                    android:layout_width="20dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="確認" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/radioGroup1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioButton1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:text="山美部落"
+                        android:textSize="16dp"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="眉溪部落"
+                        android:textSize="16dp"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="古樓部落"
+                        android:textSize="16dp"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radioButton4"
+                        android:layout_width="89dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="清流部落"
+                        android:textSize="16dp" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_culture"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:background="#FFEB3B"
+                    android:text="族群文化"
+                    android:textSize="30sp"></Button>
+
+                <Button
+                    android:id="@+id/button_upload_crop"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:background="#4CAF50"
+                    android:text="農作物"
+                    android:textSize="30sp"></Button>
+
+                <Button
+                    android:id="@+id/button_upload_insect"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|right"
+                    android:backgroundTint="#DD2A66"
+                    android:text="昆蟲"
+                    android:textSize="30sp"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/openFolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="打開資料夾" />
+
+        <EditText
+            android:id="@+id/text_information"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="left"
+            android:inputType="textLongMessage" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button_speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@android:drawable/ic_btn_speak_now" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
